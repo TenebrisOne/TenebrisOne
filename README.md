@@ -20,14 +20,14 @@ He trabajado en sectores como el bancario, educativo y empresarial, siempre apli
 
 ## 🧰 Tecnologías y Herramientas
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/manual/es/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/doc/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/es/docs)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/doc)
 
 ---
 
@@ -37,7 +37,7 @@ He trabajado en sectores como el bancario, educativo y empresarial, siempre apli
 Sitio web responsive para restaurante, enfocado en visibilidad y pedidos online.  
 **Tecnologías:** HTML, CSS, Bootstrap, JavaScript
 
-![Vista previa](https://via.placeholder.com/600x300?text=Demo+del+proyecto+Asadero) <!-- Reemplaza este link por un gif o screenshot -->
+![Vista previa](./images/Asadero_capture.png) <!-- Reemplaza este link por un gif o screenshot -->
 
 ---
 
@@ -45,7 +45,7 @@ Sitio web responsive para restaurante, enfocado en visibilidad y pedidos online.
 Aplicación web para gestionar ventas, inventarios y reportes de manera eficiente.  
 **Tecnologías:** HTML, CSS, JavaScript, PHP, MySQL
 
-![Vista previa](https://via.placeholder.com/600x300?text=Demo+del+proyecto+SI-POS)
+![Vista previa](./images/SI-POS_capture.png)
 
 ---
 
@@ -53,7 +53,7 @@ Aplicación web para gestionar ventas, inventarios y reportes de manera eficient
 Sistema de control de parqueaderos con seguimiento, disponibilidad y reportes.  
 **Tecnologías:** HTML, CSS, JavaScript, Bootstrap, Node.js, MySQL
 
-![Vista previa](https://via.placeholder.com/600x300?text=Demo+del+proyecto+SENAParking)
+![Vista previa](./images/SENAParking_capture.png)
 
 ---
 
