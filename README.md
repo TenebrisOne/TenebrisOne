@@ -73,7 +73,7 @@ Estoy abierto a nuevas oportunidades, colaboraciones o simplemente conectar.
 Si te interesa trabajar conmigo o querés saber más sobre mis proyectos:
 
 📧 **Correo:** habacucdeveloper@gmail.com  
-🌐 **Portafolio:** [HabacucDev.com]([https://github.com/HabacucDev])  
+🌐 **Portafolio:** [HabacucDev.com](https://github.com/HabacucDev)  
 📍 **Ubicación:** Colombia 🇨🇴  
 📱 **WhatsApp:** [Envíame un mensaje](https://wa.me/573108727246?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub%20y%20me%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad)
 
