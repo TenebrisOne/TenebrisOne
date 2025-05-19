@@ -34,6 +34,7 @@ He trabajado en sectores como el bancario, educativo y empresarial, siempre apli
 ## 📂 Proyectos Destacados
 
 ### 🍖 [Asadero Bar Mamonas](https://github.com/tuusuario/asadero-bar-mamonas)  
+**Link al sitio web:** ➡️ https://asaderobar-mamonas.web.app/
 Sitio web responsive para restaurante, enfocado en visibilidad y pedidos online.  
 **Tecnologías:** HTML, CSS, Bootstrap, JavaScript
 
