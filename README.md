@@ -74,9 +74,9 @@ Estoy abierto a nuevas oportunidades, colaboraciones o simplemente conectar.
 Si te interesa trabajar conmigo o querés saber más sobre mis proyectos:
 
 📧 **Correo:** habacucdeveloper@gmail.com  
-🌐 **Portafolio:** [TenebrisOne.com](https://github.com/TenebrisOne)  
+🌐 **Portafolio:** [TenebrisOne.com](https://cristianruiz-dev.web.app/)  
 📍 **Ubicación:** Colombia 🇨🇴  
-📱 **WhatsApp:** [Envíame un mensaje](https://wa.me/573104475802text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub%20y%20me%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad)
+📱 **WhatsApp:** [Envíame un mensaje](https://wa.me/573205426621text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub%20y%20me%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad)
 
 ---
 
