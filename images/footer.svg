@@ -1,0 +1,29 @@
+<svg width="960" height="170" viewBox="0 0 960 170" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" role="img" aria-label="Gracias por tu visita — TenebrisOne">
+<style>
+.w1{animation:mv 11s linear infinite}
+.w2{animation:mv 17s linear infinite reverse}
+.w3{animation:mv 25s linear infinite}
+@keyframes mv{to{transform:translateX(-480px)}}
+.fu{opacity:0;transform:translateY(12px);animation:fu .8s cubic-bezier(.22,1,.36,1) .2s forwards}
+.fu2{animation-delay:.5s}
+@keyframes fu{to{opacity:1;transform:none}}
+.beat{transform-box:fill-box;transform-origin:center;animation:beat 1.6s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.25)}24%{transform:scale(1)}36%{transform:scale(1.18)}48%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.fu{opacity:1!important;transform:none!important}}
+</style>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#7aa2f7"><animate attributeName="stop-color" values="#7aa2f7;#bb9af7;#7dcfff;#7aa2f7" dur="9s" repeatCount="indefinite"/></stop>
+<stop offset="100%" stop-color="#bb9af7"><animate attributeName="stop-color" values="#bb9af7;#7dcfff;#7aa2f7;#bb9af7" dur="9s" repeatCount="indefinite"/></stop>
+</linearGradient>
+</defs>
+<text class="fu" x="480" y="42" text-anchor="middle" font-size="22" font-weight="800" fill="url(#g)">⭐ ¿Te gustó algún proyecto? ¡Dale una estrella!</text>
+<g class="fu fu2">
+<text x="447" y="72" text-anchor="end" font-size="13.5" fill="#7a84ad">Hecho con</text>
+<text class="beat" x="455" y="72" font-size="14" fill="#f7768e">❤</text>
+<text x="474" y="72" font-size="13.5" fill="#7a84ad">en Colombia — TenebrisOne</text>
+</g>
+<g class="w3"><path d="M0 108 Q120 88 240 108 T480 108 T720 108 T960 108 T1200 108 T1440 108 V170 H0 Z" fill="#7dcfff" opacity="0.25"/></g>
+<g class="w2"><path d="M0 120 Q120 100 240 120 T480 120 T720 120 T960 120 T1200 120 T1440 120 V170 H0 Z" fill="#bb9af7" opacity="0.3"/></g>
+<g class="w1"><path d="M0 132 Q120 112 240 132 T480 132 T720 132 T960 132 T1200 132 T1440 132 V170 H0 Z" fill="#7aa2f7" opacity="0.4"/></g>
+</svg>

@@ -1,0 +1,10 @@
+# Archivos temporales de editores
+*.kate-swp
+*.swp
+*~
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+<svg width="960" height="60" viewBox="0 0 960 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="">
+<style>
+.w1{animation:mv 10s linear infinite}
+.w2{animation:mv 17s linear infinite reverse}
+.w3{animation:mv 24s linear infinite}
+@keyframes mv{to{transform:translateX(-480px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g class="w1"><path d="M0 30 Q120 8 240 30 T480 30 T720 30 T960 30 T1200 30 T1440 30" fill="none" stroke="#7aa2f7" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+<g class="w2"><path d="M0 34 Q120 54 240 34 T480 34 T720 34 T960 34 T1200 34 T1440 34" fill="none" stroke="#bb9af7" stroke-width="2.5" stroke-linecap="round" opacity=".65"/></g>
+<g class="w3"><path d="M0 26 Q120 42 240 26 T480 26 T720 26 T960 26 T1200 26 T1440 26" fill="none" stroke="#7dcfff" stroke-width="2" stroke-linecap="round" opacity=".5"/></g>
+</svg>
