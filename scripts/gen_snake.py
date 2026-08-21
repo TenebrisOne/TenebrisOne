@@ -19,11 +19,11 @@ PITCH = CELL + GAP
 PAD = 14
 DUR = 40.0  # segundos por ciclo
 
-# tokyonight: fondo panel, celda vacía, rampa de intensidad, serpiente
-BG, BORDER, EMPTY = "#1a1b27", "#2f334d", "#24283b"
-RAMP = ["#3d59a1", "#7aa2f7", "#9d7cd8", "#bb9af7"]
+# paleta «Aurora Nocturna» (scripts/tokens.py): fondo, celda vacía, rampa, serpiente
+BG, BORDER, EMPTY = "#0d1226", "#272f55", "#1c2342"
+RAMP = ["#3a4a85", "#6b7fe8", "#9d7bff", "#5ee7ff"]
 SNAKE = "#ff9e64"
-MUTED = "#565f89"
+MUTED = "#5d6791"
 
 
 def fetch():
@@ -90,7 +90,10 @@ parts = [
     f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" '
     f"font-family=\"'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif\" role=\"img\" "
     f'aria-label="Serpiente animada comiéndose las contribuciones de {USER}">',
-    f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{BG}" stroke="{BORDER}"/>',
+    '<defs><filter id="gw" x="-60%" y="-60%" width="220%" height="220%">'
+    '<feGaussianBlur stdDeviation="2.5" result="b"/>'
+    '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>',
+    f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14" fill="{BG}" stroke="{BORDER}"/>',
 ]
 
 # celdas: base vacía + capa de color que la serpiente se come
@@ -120,7 +123,7 @@ for k in range(7, 0, -1):
     )
 # cabeza con ojos, orientada según la dirección
 parts.append(
-    f'<g><rect x="-6.5" y="-6.5" width="13" height="13" rx="4" fill="{SNAKE}"/>'
+    f'<g filter="url(#gw)"><rect x="-6.5" y="-6.5" width="13" height="13" rx="4" fill="{SNAKE}"/>'
     f'<circle cx="3" cy="-3" r="1.7" fill="{BG}"/><circle cx="3" cy="3" r="1.7" fill="{BG}"/>'
     f'<animateMotion path="{PATH}" dur="{DUR}s" repeatCount="indefinite" rotate="auto"/></g>'
 )

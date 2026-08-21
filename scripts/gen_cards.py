@@ -1,33 +1,24 @@
 #!/usr/bin/env python3
 """Genera tarjetas SVG uniformes para los proyectos del README de TenebrisOne.
 
-Design tokens (coherentes con el tema tokyonight de github-readme-stats):
-  bg #1a1b27 · border #2f334d · title #c0caf5 · body #a9b1d6
-  accents: plataformas #7aa2f7 · integraciones #bb9af7 · herramientas #7dcfff
-  semantic: público #9ece6a · privado #e0af68
-Grid 8pt, radius 8px (estilo modern), tipografía system-ui.
+Diseño «Aurora Nocturna» (tokens.py): superficie glass, borde degradado
+animado, resplandor de esquina tintado por categoría, píldora de categoría,
+badge de visibilidad con halo, chips de stack y barrido de brillo.
+Grid 8pt, radius 14, tipografía system-ui.
 """
 import html
 import os
-import re
+
+from tokens import FONT, PALETTE, blend, flow_gradient, glow_filter
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "images", "cards")
 
-TOKENS = {
-    "bg": "#1a1b27",
-    "border": "#2f334d",
-    "title": "#c0caf5",
-    "body": "#a9b1d6",
-    "chip_bg": "#24283b",
-    "public": "#9ece6a",
-    "private": "#e0af68",
-    "font": "'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif",
-}
+P = PALETTE
 
 ACCENTS = {
-    "plataformas": "#7aa2f7",
-    "integraciones": "#bb9af7",
-    "herramientas": "#7dcfff",
+    "plataformas": P["cyan"],
+    "integraciones": P["violet"],
+    "herramientas": P["pink"],
 }
 
 CAT_LABEL = {
@@ -36,7 +27,7 @@ CAT_LABEL = {
     "herramientas": "APP · HERRAMIENTA",
 }
 
-W, H = 420, 180
+W, H = 420, 190
 PAD = 20
 
 PROJECTS = [
@@ -126,34 +117,27 @@ def wrap(text, max_chars=60, max_lines=3):
 
 
 def chip(x, y, label, accent):
-    tw = round(len(label) * 6.2) + 16
+    tw = round(len(label) * 6.2) + 18
     return (
-        f'<rect x="{x}" y="{y}" width="{tw}" height="22" rx="6" fill="{TOKENS["chip_bg"]}"/>'
+        f'<rect x="{x}" y="{y}" width="{tw}" height="22" rx="11" fill="{P["surface"]}" '
+        f'stroke="{accent}" stroke-opacity=".4"/>'
         f'<text x="{x + tw / 2}" y="{y + 15}" text-anchor="middle" font-size="10.5" '
         f'font-weight="600" fill="{accent}">{html.escape(label)}</text>',
         tw,
     )
 
 
-def blend(fg, alpha, bg="#1a1b27"):
-    f = [int(fg[i : i + 2], 16) for i in (1, 3, 5)]
-    b = [int(bg[i : i + 2], 16) for i in (1, 3, 5)]
-    return "#" + "".join(f"{round(alpha * fc + (1 - alpha) * bc):02x}" for fc, bc in zip(f, b))
-
-
 def badge(publico):
     label = "PÚBLICO" if publico else "PRIVADO"
-    color = TOKENS["public"] if publico else TOKENS["private"]
+    color = P["green"] if publico else P["amber"]
     tw = round(len(label) * 6.6) + 26
     x = W - PAD - tw
-    dot = (
+    return (
+        f'<rect x="{x}" y="{14}" width="{tw}" height="18" rx="9" '
+        f'fill="{blend(color, 0.14, P["glass"])}" stroke="{color}" stroke-opacity=".35"/>'
         f'<circle class="halo" cx="{x + 11}" cy="23" r="3" fill="none" '
         f'stroke="{color}" stroke-width="1.5"/>'
         f'<circle class="dot" cx="{x + 11}" cy="23" r="3" fill="{color}"/>'
-    )
-    return (
-        f'<rect x="{x}" y="14" width="{tw}" height="18" rx="9" fill="{blend(color, 0.12)}"/>'
-        f"{dot}"
         f'<text x="{x + 18}" y="27" font-size="9.5" font-weight="700" '
         f'letter-spacing="0.5" fill="{color}">{label}</text>'
     )
@@ -161,75 +145,113 @@ def badge(publico):
 
 STYLE = (
     "<style>"
-    ".bar{transform:scaleY(0);transform-box:fill-box;transform-origin:center;"
-    "animation:grow .55s cubic-bezier(.22,1,.36,1) .1s forwards,"
-    "bpulse 3.4s ease-in-out 2.2s infinite}"
-    "@keyframes grow{to{transform:scaleY(1)}}"
-    "@keyframes bpulse{0%,100%{opacity:1}50%{opacity:.5}}"
-    ".cat{opacity:0;transform:translateX(-10px);animation:in .5s ease .3s forwards}"
-    ".ttl{opacity:0;transform:translateY(8px);animation:in .5s ease .4s forwards}"
-    ".bdg{opacity:0;animation:in .5s ease .55s forwards}"
+    ".cat{opacity:0;transform:translateX(-10px);animation:in .5s ease .25s forwards}"
+    ".ttl{opacity:0;transform:translateY(8px);animation:in .5s ease .38s forwards}"
+    ".bdg{opacity:0;animation:in .5s ease .5s forwards}"
     ".ln{opacity:0;transform:translateY(6px);animation:in .45s ease forwards}"
     ".chp{opacity:0;transform:translateY(10px);animation:in .4s cubic-bezier(.22,1,.36,1) forwards}"
     "@keyframes in{to{opacity:1;transform:none}}"
     ".dot{animation:pulse 2.6s ease-in-out 1.4s infinite}"
     "@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}"
-    ".halo{opacity:0;animation:halo 2.6s ease-out 1.4s infinite}"
+    ".halo{transform-box:fill-box;transform-origin:center;opacity:0;"
+    "animation:halo 2.6s ease-out 1.4s infinite}"
     "@keyframes halo{0%{opacity:.7;transform:scale(1)}70%,100%{opacity:0;transform:scale(2.4)}}"
-    ".halo{transform-box:fill-box;transform-origin:center}"
+    ".glowc{animation:gp 5s ease-in-out infinite}"
+    "@keyframes gp{0%,100%{opacity:.55}50%{opacity:1}}"
     ".shine{animation:sweep 6s cubic-bezier(.4,0,.2,1) 1.2s infinite}"
-    "@keyframes sweep{0%{transform:translateX(0)}26%{transform:translateX(640px)}100%{transform:translateX(640px)}}"
+    "@keyframes sweep{0%{transform:translateX(0)}26%{transform:translateX(640px)}"
+    "100%{transform:translateX(640px)}}"
+    ".arr{animation:arr 1.8s ease-in-out infinite}"
+    "@keyframes arr{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}"
+    ".pt{transform-box:fill-box;transform-origin:center;animation:pt 5s ease-in-out infinite alternate}"
+    "@keyframes pt{to{transform:translateY(-8px)}}"
     "@media (prefers-reduced-motion:reduce){*{animation:none!important}"
     ".cat,.ttl,.bdg,.ln,.chp{opacity:1!important;transform:none!important}"
-    ".bar{transform:none!important}.halo,.shine{opacity:0!important}}"
+    ".halo,.shine{opacity:0!important}}"
     "</style>"
 )
 
-DEFS = (
-    '<defs>'
-    f'<clipPath id="cp"><rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="8"/></clipPath>'
-    '<linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">'
-    '<stop offset="0" stop-color="#fff" stop-opacity="0"/>'
-    '<stop offset="0.5" stop-color="#fff" stop-opacity="0.08"/>'
-    '<stop offset="1" stop-color="#fff" stop-opacity="0"/>'
-    '</linearGradient>'
-    '</defs>'
-)
+
+def defs(accent):
+    return (
+        "<defs>"
+        f'<clipPath id="cp"><rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="13"/></clipPath>'
+        + flow_gradient("gb", [accent, P["border"], accent], dur=6)
+        + f'<radialGradient id="rg" gradientUnits="userSpaceOnUse" cx="60" cy="0" r="250">'
+        f'<stop offset="0" stop-color="{accent}" stop-opacity=".22"/>'
+        f'<stop offset="1" stop-color="{accent}" stop-opacity="0"/></radialGradient>'
+        '<linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+        '<stop offset="0.5" stop-color="#fff" stop-opacity="0.07"/>'
+        '<stop offset="1" stop-color="#fff" stop-opacity="0"/>'
+        "</linearGradient>"
+        + glow_filter("gw", 2.5)
+        + "</defs>"
+    )
+
 
 SHINE = (
     '<g clip-path="url(#cp)"><g transform="rotate(16)">'
-    '<rect class="shine" x="-150" y="-120" width="90" height="420" fill="url(#sh)"/>'
-    '</g></g>'
+    '<rect class="shine" x="-150" y="-120" width="90" height="440" fill="url(#sh)"/>'
+    "</g></g>"
 )
+
+
+def cat_pill(cat, accent):
+    label = CAT_LABEL[cat]
+    tw = round(len(label) * 6.0) + 20
+    return (
+        f'<rect x="{PAD}" y="13" width="{tw}" height="20" rx="10" '
+        f'fill="{blend(accent, 0.13, P["glass"])}"/>'
+        f'<text x="{PAD + tw / 2}" y="26.5" text-anchor="middle" font-size="9.5" '
+        f'font-weight="700" letter-spacing="1" fill="{accent}">{html.escape(label)}</text>'
+    )
+
+
+def particles(accent):
+    pts = [(392, 62, 0), (376, 96, 1.6), (398, 128, 0.8)]
+    return "".join(
+        f'<circle class="pt" style="animation-delay:{d}s" cx="{x}" cy="{y}" r="2" '
+        f'fill="{accent}" opacity=".35"/>'
+        for x, y, d in pts
+    )
 
 
 def card(slug, name, cat, publico, desc, stack):
     accent = ACCENTS[cat]
     parts = [
         f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" '
-        f'font-family="{TOKENS["font"]}" role="img" aria-label="{html.escape(name)}">',
+        f'font-family="{FONT}" role="img" aria-label="{html.escape(name)}">',
         STYLE,
-        DEFS,
-        f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="8" '
-        f'fill="{TOKENS["bg"]}" stroke="{TOKENS["border"]}"/>',
-        f'<rect class="bar" x="0" y="16" width="3.5" height="{H - 32}" rx="1.75" fill="{accent}"/>',
-        f'<text class="cat" x="{PAD}" y="28" font-size="10" font-weight="700" letter-spacing="1.2" '
-        f'fill="{accent}">{html.escape(CAT_LABEL[cat])}</text>',
+        defs(accent),
+        f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="13" fill="{P["glass"]}"/>',
+        f'<g clip-path="url(#cp)"><rect class="glowc" x="0" y="0" width="{W}" height="{H}" '
+        f'fill="url(#rg)"/></g>',
+        f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="13" fill="none" '
+        f'stroke="url(#gb)" stroke-width="1.5"/>',
+        cat_pill(cat, accent),
         f'<g class="bdg">{badge(publico)}</g>',
-        f'<text class="ttl" x="{PAD}" y="56" font-size="17" font-weight="700" '
-        f'fill="{TOKENS["title"]}">{html.escape(name)}</text>',
+        f'<text class="ttl" x="{PAD}" y="60" font-size="18" font-weight="700" '
+        f'fill="{P["title"]}">{html.escape(name)}</text>',
+        particles(accent),
     ]
     for i, line in enumerate(wrap(desc)):
         parts.append(
             f'<text class="ln" style="animation-delay:{0.55 + i * 0.12:.2f}s" '
-            f'x="{PAD}" y="{80 + i * 17}" font-size="12" '
-            f'fill="{TOKENS["body"]}">{html.escape(line)}</text>'
+            f'x="{PAD}" y="{84 + i * 17}" font-size="12" '
+            f'fill="{P["body"]}">{html.escape(line)}</text>'
         )
     x = PAD
     for j, s in enumerate(stack):
         c, tw = chip(x, H - PAD - 22, s, accent)
         parts.append(f'<g class="chp" style="animation-delay:{0.85 + j * 0.1:.2f}s">{c}</g>')
         x += tw + 8
+    if publico:
+        parts.append(
+            f'<g class="chp" style="animation-delay:1.1s"><text class="arr" x="{W - PAD - 14}" '
+            f'y="{H - PAD - 6}" font-size="14" font-weight="700" fill="{accent}" '
+            f'filter="url(#gw)">❯</text></g>'
+        )
     parts.append(SHINE)
     parts.append("</svg>")
     svg = "".join(parts)

@@ -1,4 +1,4 @@
-name: Regenerar la culebrita de contribuciones
+name: Regenerar culebrita y estadísticas
 
 on:
   schedule:
@@ -22,10 +22,15 @@ jobs:
       - name: Generar SVG de la culebrita
         run: python3 scripts/gen_snake.py
 
+      - name: Generar tarjetas de estadísticas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/gen_stats.py
+
       - name: Commit y push si cambió
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/snake.svg
-          git diff --cached --quiet || git commit -m "🐍 Actualiza la culebrita de contribuciones"
+          git add images/snake.svg images/stats.svg images/top-langs.svg
+          git diff --cached --quiet || git commit -m "🤖 Actualiza culebrita y estadísticas"
           git push

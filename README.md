@@ -1,192 +1,186 @@
-<!-- ═══════════════════ HERO ANIMADO ═══════════════════ -->
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<div align="center">
 
-<p align="center">
-  <img src="./images/hero.svg" width="100%" alt="Cristian Ruiz — TenebrisOne · Desarrollador Fullstack · Odoo · VPS">
-</p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0c10,100:161b22&height=140&section=header&text=cristian@tenebris%3A~%24&fontColor=ffb000&fontSize=44&fontAlignY=48&desc=T%C3%A9cnico%20de%20Sistemas%20%C2%B7%20Desarrollador%20Fullstack%20%C2%B7%20Ciberseguridad&descSize=15&descAlignY=72" alt="header"/>
 
-<p align="center">
-  <a href="https://cristianruiz-dev.web.app/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3200&pause=900&color=7AA2F7&center=true&vCenter=true&width=680&lines=%F0%9F%92%BB+Desarrollador+Fullstack+%C2%B7+PHP+%2B+Python;%F0%9F%94%8C+Integraciones+Odoo+ERP+%C2%B7+XML-RPC+%2F+JSON-RPC;%F0%9F%96%A5%EF%B8%8F+Administraci%C3%B3n+VPS+%C2%B7+Apache+%C2%B7+Nginx+%C2%B7+SSL;%E2%9A%99%EF%B8%8F+Automatizaci%C3%B3n+de+procesos+empresariales;%F0%9F%9A%80+M%C3%A1s+de+19+proyectos+para+negocios+reales" alt="Desarrollador Fullstack · Integraciones Odoo · Administración VPS · Automatización">
+<a href="https://cristianruiz-dev.web.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=FFB000&center=true&vCenter=true&width=680&lines=%24+whoami+%E2%86%92+Cristian+Ruiz%2C+Colombia;%24+stack+%E2%86%92+PHP+%C2%B7+Python+%C2%B7+MySQL+%C2%B7+Odoo+%C2%B7+JS;%24+focus+%E2%86%92+automatizaci%C3%B3n%2C+integraciones%2C+seguridad;%24+deploy+%E2%86%92+soluciones+que+realmente+funcionan" alt="typing"/>
+</a>
+
+<br/><br/>
+
+<a href="https://cristianruiz-dev.web.app/"><img src="https://img.shields.io/badge/Portafolio-FFB000?style=for-the-badge&logo=firefoxbrowser&logoColor=0A0C10" alt="portafolio"/></a>
+<a href="mailto:habacucdeveloper@gmail.com"><img src="https://img.shields.io/badge/Correo-161B22?style=for-the-badge&logo=gmail&logoColor=FFB000" alt="email"/></a>
+<a href="https://wa.me/573205426621?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub%20y%20me%20gustar%C3%ADa%20hablar%20contigo"><img src="https://img.shields.io/badge/WhatsApp-161B22?style=for-the-badge&logo=whatsapp&logoColor=FFB000" alt="whatsapp"/></a>
+<img src="https://komarev.com/ghpvc/?username=TenebrisOne&label=visitas&color=ffb000&style=for-the-badge" alt="visitas"/>
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════════ WHOAMI ═══════════════════════ -->
+
+## `❯ whoami`
+
+Técnico de sistemas y desarrollador fullstack. Trabajo donde el software se cruza con la operación real: soporte, redes, servidores e integraciones que le quitan trabajo manual a la gente todos los días.
+
+He construido sistemas para los sectores **bancario**, **educativo** y **empresarial**, con criterio de ciberseguridad desde el primer commit.
+
+```typescript
+const cristian = {
+  rol:        "Técnico de Sistemas & Desarrollador Fullstack",
+  ubicacion:  "Colombia 🇨🇴",
+  dominios:   ["Soporte y redes", "Desarrollo web", "Integraciones ERP"],
+  sectores:   ["Bancario", "Educativo", "Empresarial"],
+  enfoque:    ["Ciberseguridad", "Automatización", "Mejora continua"],
+  filosofia:  "No se trata solo de escribir código, sino de crear soluciones que funcionen"
+};
+```
+
+<br/>
+
+<!-- ═══════════════════════ STACK ═══════════════════════ -->
+
+## `❯ ls stack/`
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=php,python,js,mysql,flask,nodejs,html,css,bootstrap,git,github,linux,vscode&theme=dark&perline=13" alt="stack"/>
+
+</div>
+
+| Capa | Herramientas |
+|---|---|
+| **Backend** | ![PHP](https://img.shields.io/badge/PHP-161B22?style=flat-square&logo=php&logoColor=FFB000) ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Flask](https://img.shields.io/badge/Flask-161B22?style=flat-square&logo=flask&logoColor=FFB000) ![Node](https://img.shields.io/badge/Node.js-161B22?style=flat-square&logo=nodedotjs&logoColor=FFB000) |
+| **Frontend** | ![HTML](https://img.shields.io/badge/HTML5-161B22?style=flat-square&logo=html5&logoColor=FFB000) ![CSS](https://img.shields.io/badge/CSS3-161B22?style=flat-square&logo=css3&logoColor=FFB000) ![JS](https://img.shields.io/badge/JavaScript-161B22?style=flat-square&logo=javascript&logoColor=FFB000) ![Bootstrap](https://img.shields.io/badge/Bootstrap-161B22?style=flat-square&logo=bootstrap&logoColor=FFB000) |
+| **Datos & ERP** | ![MySQL](https://img.shields.io/badge/MySQL-161B22?style=flat-square&logo=mysql&logoColor=FFB000) ![Odoo](https://img.shields.io/badge/Odoo-161B22?style=flat-square&logo=odoo&logoColor=FFB000) ![JSON-RPC](https://img.shields.io/badge/JSON--RPC-161B22?style=flat-square&logo=json&logoColor=FFB000) ![XML-RPC](https://img.shields.io/badge/XML--RPC-161B22?style=flat-square&logo=xml&logoColor=FFB000) |
+| **Infra & Ops** | ![Linux](https://img.shields.io/badge/Linux-161B22?style=flat-square&logo=linux&logoColor=FFB000) ![Nginx](https://img.shields.io/badge/Nginx-161B22?style=flat-square&logo=nginx&logoColor=FFB000) ![PM2](https://img.shields.io/badge/PM2-161B22?style=flat-square&logo=pm2&logoColor=FFB000) ![Git](https://img.shields.io/badge/Git-161B22?style=flat-square&logo=git&logoColor=FFB000) |
+
+<br/>
+
+<!-- ═══════════════════════ PROYECTOS ═══════════════════════ -->
+
+## `❯ ls proyectos/`
+
+> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) código abierto · ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) desarrollo bajo contrato, disponible en entrevista
+
+<details open>
+<summary><b>&nbsp;01 · Plataformas y sistemas web</b>&nbsp;<sub>(8)</sub></summary>
+
+<br/>
+
+| Proyecto | Qué resuelve | Stack |
+|---|---|---|
+| **MJA_Manager** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Plataforma interna de **Legado de Honor** para afiliados, cuotas, pagos, servicios y documentos. Autenticación, auditoría y panel administrativo con visión integral de cada afiliado. | ![PHP](https://img.shields.io/badge/PHP-161B22?style=flat-square&logo=php&logoColor=FFB000) ![MySQL](https://img.shields.io/badge/MySQL-161B22?style=flat-square&logo=mysql&logoColor=FFB000) |
+| **rifa-sanroque** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Rifa profesional para Portales de San Roque: reservas temporales, pagos **PSE**, control de stock por API y confirmación automatizada para venta de lotes. | ![PHP](https://img.shields.io/badge/PHP-161B22?style=flat-square&logo=php&logoColor=FFB000) ![MySQL](https://img.shields.io/badge/MySQL-161B22?style=flat-square&logo=mysql&logoColor=FFB000) |
+| **gestion_terranova** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Gestión integral de una empresa de venta de lotes: clientes, propiedades, ventas y procesos. Migración de Excel a una plataforma estructurada y consultable. | ![PHP](https://img.shields.io/badge/PHP-161B22?style=flat-square&logo=php&logoColor=FFB000) ![MySQL](https://img.shields.io/badge/MySQL-161B22?style=flat-square&logo=mysql&logoColor=FFB000) |
+| **Kryon** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Kanban multiempresa para proyectos y sprints, con multitenencia, selector de empresa y UI en modo oscuro. En curso: sprints, tareas y mejoras de UX. | ![Multitenant](https://img.shields.io/badge/Multitenant-161B22?style=flat-square&logoColor=FFB000) ![Kanban](https://img.shields.io/badge/Kanban-161B22?style=flat-square&logoColor=FFB000) |
+| **Auto_msn_CRM** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | CRM con automatización de contactos, comunicaciones y seguimiento de procesos comerciales. | ![CRM](https://img.shields.io/badge/CRM-161B22?style=flat-square&logoColor=FFB000) ![Automatización](https://img.shields.io/badge/Automatizaci%C3%B3n-161B22?style=flat-square&logoColor=FFB000) |
+| **SI-POS** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Facturación de punto de venta para registrar ventas de forma ágil en mostrador. | ![POS](https://img.shields.io/badge/POS-161B22?style=flat-square&logoColor=FFB000) |
+| **Azaroth** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Administración de rifas: organiza cada sorteo y genera boletos listos para impresión. | ![PHP](https://img.shields.io/badge/PHP-161B22?style=flat-square&logo=php&logoColor=FFB000) |
+| **[SENAParking](https://github.com/TenebrisOne/SENAParking)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | Control de parqueadero del SENA: ingreso/salida de vehículos, usuarios e historial de movimientos. | ![Node](https://img.shields.io/badge/Node.js-161B22?style=flat-square&logo=nodedotjs&logoColor=FFB000) ![MySQL](https://img.shields.io/badge/MySQL-161B22?style=flat-square&logo=mysql&logoColor=FFB000) |
+
+</details>
+
+<details open>
+<summary><b>&nbsp;02 · Integraciones y automatizaciones</b>&nbsp;<sub>(7)</sub></summary>
+
+<br/>
+
+| Proyecto | Qué resuelve | Stack |
+|---|---|---|
+| **[excel-terceros-odoo](https://github.com/TenebrisOne/excel-terceros-odoo)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | Sincroniza empresas y empleados con Odoo desde Excel o JSON: valida NIT colombiano con cálculo de DV, resuelve relaciones Many2one y crea/actualiza vía JSON-RPC con logging y endpoints de diagnóstico. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Flask](https://img.shields.io/badge/Flask-161B22?style=flat-square&logo=flask&logoColor=FFB000) ![Odoo](https://img.shields.io/badge/Odoo-161B22?style=flat-square&logo=odoo&logoColor=FFB000) |
+| **[pricelist](https://github.com/TenebrisOne/pricelist)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | Genera listas de precios en PDF desde Odoo por XML-RPC, con filtros por fecha, categoría, marca y precio, configuración por `.env` y maquetación corporativa en ReportLab. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Odoo](https://img.shields.io/badge/Odoo-161B22?style=flat-square&logo=odoo&logoColor=FFB000) |
+| **webhook_uvt_iva** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Ajusta el IVA (0 % o 19 %) en líneas de venta y compra según el precio y los topes de **UVT** en Colombia para computadores y móviles. Clasifica productos, evita duplicados y actualiza por RPC. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Flask](https://img.shields.io/badge/Flask-161B22?style=flat-square&logo=flask&logoColor=FFB000) ![Odoo](https://img.shields.io/badge/Odoo-161B22?style=flat-square&logo=odoo&logoColor=FFB000) |
+| **webhook_scrap** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Consulta el **RUES** por la API de Socrata y enriquece automáticamente los terceros registrados en Odoo. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Odoo](https://img.shields.io/badge/Odoo-161B22?style=flat-square&logo=odoo&logoColor=FFB000) |
+| **Search_linkedIn** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Recibe el id de un contacto desde Odoo, localiza su perfil de LinkedIn con Google Custom Search y devuelve la URL al registro por JSON-RPC. Corre sobre PM2 + Nginx. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Flask](https://img.shields.io/badge/Flask-161B22?style=flat-square&logo=flask&logoColor=FFB000) |
+| **instagram_odoo_msn** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Lleva mensajes y eventos de Instagram al ERP para centralizar contactos, conversaciones y procesos comerciales. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) ![Odoo](https://img.shields.io/badge/Odoo-161B22?style=flat-square&logo=odoo&logoColor=FFB000) |
+| **Servientrega_script** <br> ![privado](https://img.shields.io/badge/privado-2A2118?style=flat-square) | Automatiza envíos y logística con Servientrega: manejo de datos y tareas operativas repetitivas. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) |
+
+</details>
+
+<details>
+<summary><b>&nbsp;03 · Web, apps y herramientas</b>&nbsp;<sub>(4)</sub></summary>
+
+<br/>
+
+| Proyecto | Qué resuelve | Stack |
+|---|---|---|
+| **[asadero-bar-mamonas](https://github.com/TenebrisOne/asadero-bar-mamonas)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | Sitio responsive para restaurante, enfocado en visibilidad y pedidos. → [ver sitio](https://asaderobar-mamonas.web.app/) | ![HTML](https://img.shields.io/badge/HTML5-161B22?style=flat-square&logo=html5&logoColor=FFB000) ![Bootstrap](https://img.shields.io/badge/Bootstrap-161B22?style=flat-square&logo=bootstrap&logoColor=FFB000) |
+| **[NextQR](https://github.com/TenebrisOne/NextQR)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | Genera códigos QR y de barras al instante, sin servidor ni dependencias. | ![JS](https://img.shields.io/badge/JavaScript-161B22?style=flat-square&logo=javascript&logoColor=FFB000) |
+| **[ConversorImg_py](https://github.com/TenebrisOne/ConversorImg_py)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | App de escritorio para convertir imágenes entre PNG, JPG, WEBP, BMP, GIF e ICO. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) |
+| **[Scrpt_whatsapp](https://github.com/TenebrisOne/Scrpt_whatsapp)** <br> ![repo público](https://img.shields.io/badge/repo%20p%C3%BAblico-FFB000?style=flat-square) | Envía mensajes de WhatsApp a uno o varios contactos de forma automatizada. | ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=FFB000) |
+
+</details>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/TenebrisOne?tab=repositories">
+    <img src="https://img.shields.io/badge/Ver%20todos%20los%20repositorios-FFB000?style=for-the-badge&logo=github&logoColor=0A0C10" alt="repos"/>
   </a>
-</p>
+</div>
 
-<p align="center">
-  <a href="https://cristianruiz-dev.web.app/"><img src="https://img.shields.io/badge/Portafolio-cristianruiz--dev.web.app-0A66C2?style=for-the-badge&logo=firefox&logoColor=white" alt="Portafolio"></a>
-  <a href="mailto:habacucdeveloper@gmail.com"><img src="https://img.shields.io/badge/Email-habacucdeveloper@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://wa.me/573205426621?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub%20y%20me%20gustar%C3%ADa%20hablar%20contigo%20sobre%20una%20oportunidad"><img src="https://img.shields.io/badge/WhatsApp-Escr%C3%ADbeme-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
-  <img src="https://img.shields.io/badge/Colombia-🇨🇴-FCD116?style=for-the-badge" alt="Colombia">
-</p>
+<br/>
 
-<img src="./images/divider.svg" width="100%" alt="">
+<!-- ═══════════════════════ MÉTRICAS ═══════════════════════ -->
 
-<img src="./images/sections/sobre-mi.svg" width="100%" alt="Sobre mí">
+## `❯ git log --stat`
 
-Soy técnico de sistemas y desarrollador fullstack con experiencia en los sectores **bancario, educativo y empresarial**. He construido **más de 19 proyectos** entre plataformas de gestión, sistemas de punto de venta, CRMs e integraciones con Odoo ERP.
+<div align="center">
 
-- 🔧 Desarrollo plataformas web completas con **PHP, Python y MySQL**
-- 🔌 Automatizo procesos empresariales integrando **Odoo** vía XML-RPC / JSON-RPC con **Python y Flask**
-- 🖥️ Administro **servidores VPS Linux**: Apache, Nginx, dominios, certificados SSL, PM2 y despliegues en producción
-- 🛡️ Aplico buenas prácticas de **ciberseguridad** en cada proyecto
-- ⚡ Reduje tiempos de soporte técnico en un **30%** mediante automatización
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=TenebrisOne&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0c10&title_color=ffb000&icon_color=ffb000&text_color=c9d1d9&ring_color=ffb000" alt="stats"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TenebrisOne&layout=compact&langs_count=8&hide_border=true&bg_color=0a0c10&title_color=ffb000&text_color=c9d1d9" alt="top-langs"/>
 
-<br>
+<br/>
 
-<img src="./images/sections/stack.svg" width="100%" alt="Stack Tecnológico">
+<img src="https://streak-stats.demolab.com?user=TenebrisOne&hide_border=true&background=0a0c10&ring=ffb000&fire=ffb000&currStreakLabel=ffb000&sideLabels=c9d1d9&dates=8b949e&stroke=21262d&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="streak"/>
 
-<table>
-<tr>
-<td width="42%" align="center">
-  <img src="./images/stack-orbit.svg" width="100%" alt="Tecnologías orbitando el monograma de TenebrisOne">
-</td>
-<td>
-  <b>Backend</b><br><br>
-  <a href="https://www.php.net/manual/es/"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"></a>
-  <a href="https://docs.python.org/es/3/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"></a>
-  <a href="https://dev.mysql.com/doc/"><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
-  <br><br>
-  <b>Frontend</b><br><br>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-  <br><br>
-  <b>Integraciones y ERP</b><br><br>
-  <a href="https://www.odoo.com/documentation"><img src="https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white" alt="Odoo"></a>
-  <img src="https://img.shields.io/badge/XML--RPC%20%2F%20JSON--RPC-4A4A4A?style=for-the-badge" alt="XML-RPC / JSON-RPC">
-  <img src="https://img.shields.io/badge/Webhooks-FF6C37?style=for-the-badge&logo=webhooks&logoColor=white" alt="Webhooks">
-  <img src="https://img.shields.io/badge/APIs%20REST-009688?style=for-the-badge" alt="APIs REST">
-</td>
-</tr>
-</table>
+<br/><br/>
 
-**Servidores y administración VPS**
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=TenebrisOne&hide_border=true&bg_color=0a0c10&color=ffb000&line=ffb000&point=ffffff&title_color=ffb000&area=true&area_color=ffb000" alt="activity-graph"/>
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Ubuntu Server](https://img.shields.io/badge/Ubuntu%20Server-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-[![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/docs/)
-[![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/en/docs/)
-![OpenSSH](https://img.shields.io/badge/OpenSSH-4D4D4D?style=for-the-badge&logo=openssh&logoColor=white)
-[![PM2](https://img.shields.io/badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white)](https://pm2.keymetrics.io/)
-![SSL](https://img.shields.io/badge/SSL%20%C2%B7%20Let's%20Encrypt-003A70?style=for-the-badge&logo=letsencrypt&logoColor=white)
+<br/>
 
-**Herramientas y despliegue**
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
 
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/doc)
-[![Firebase](https://img.shields.io/badge/Firebase%20Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=000)](https://firebase.google.com/docs/hosting)
+</div>
 
-<img src="./images/divider.svg" width="100%" alt="">
+<br/>
 
-<img src="./images/sections/destacados.svg" width="100%" alt="Proyectos Destacados">
+<!-- ═══════════════════════ LOGROS ═══════════════════════ -->
 
-<p align="center">
-  <a href="https://github.com/TenebrisOne/SENAParking"><img src="./images/cards/senaparking.svg" alt="SENAParking" width="70%"></a>
-</p>
-<p align="center">🚗 <a href="https://github.com/TenebrisOne/SENAParking"><b>Ver código en GitHub →</b></a></p>
+## `❯ cat logros.txt`
 
-<p align="center">
-  <img src="./images/cards/si-pos.svg" alt="SI-POS" width="70%">
-</p>
-<p align="center">💼 <i>Proyecto para cliente real — código bajo acuerdo de confidencialidad</i></p>
+```diff
++ Reducción del 30% en tiempos de soporte técnico mediante automatización
++ Sistemas en producción adoptados por negocios reales
++ Principios de ciberseguridad aplicados en cada proyecto
++ Reconocimiento por desempeño y cumplimiento de objetivos técnicos
++ Becas por alto rendimiento académico
+```
 
-<p align="center">
-  <a href="https://asaderobar-mamonas.web.app/"><img src="./images/cards/asadero-bar-mamonas.svg" alt="Asadero Bar Mamonas" width="70%"></a>
-</p>
-<p align="center">🍖 <a href="https://asaderobar-mamonas.web.app/"><b>Ver sitio en vivo →</b></a> · <a href="https://github.com/TenebrisOne/asadero-bar-mamonas">Código</a></p>
+<br/>
 
-<br>
+<!-- ═══════════════════════ CONTACTO ═══════════════════════ -->
 
-<img src="./images/sections/proyectos.svg" width="100%" alt="Todos mis proyectos">
+## `❯ contact --send`
 
-### 🏗️ Plataformas y sistemas web
+Abierto a nuevas oportunidades, colaboraciones o simplemente a conectar.
 
-<p align="center">
-  <img src="./images/cards/mja-manager.svg" alt="MJA_Manager" width="49%">
-  <img src="./images/cards/mja-landing.svg" alt="mja-landing" width="49%">
-  <img src="./images/cards/gestion-terranova.svg" alt="gestion_terranova" width="49%">
-  <img src="./images/cards/kryon.svg" alt="Kryon" width="49%">
-  <img src="./images/cards/auto-msn-crm.svg" alt="Auto_msn_CRM" width="49%">
-  <img src="./images/cards/si-pos.svg" alt="SI-POS" width="49%">
-  <img src="./images/cards/azaroth.svg" alt="Azaroth" width="49%">
-  <img src="./images/cards/rifa-sanroque.svg" alt="rifa-sanroque" width="49%">
-  <img src="./images/cards/registro-contactos.svg" alt="registro_contactos" width="49%">
-  <a href="https://github.com/TenebrisOne/SENAParking"><img src="./images/cards/senaparking.svg" alt="SENAParking" width="49%"></a>
-</p>
+| | |
+|---|---|
+| **Correo** | habacucdeveloper@gmail.com |
+| **Portafolio** | [cristianruiz-dev.web.app](https://cristianruiz-dev.web.app/) |
+| **WhatsApp** | [+57 320 542 6621](https://wa.me/573205426621?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub) |
+| **Ubicación** | Colombia 🇨🇴 · disponible en remoto |
 
-### 🔌 Integraciones y automatizaciones
+<br/>
 
-<p align="center">
-  <a href="https://github.com/TenebrisOne/excel-terceros-odoo"><img src="./images/cards/excel-terceros-odoo.svg" alt="excel-terceros-odoo" width="49%"></a>
-  <a href="https://github.com/TenebrisOne/pricelist"><img src="./images/cards/pricelist.svg" alt="pricelist" width="49%"></a>
-  <img src="./images/cards/webhook-uvt-iva.svg" alt="webhook_uvt_iva" width="49%">
-  <img src="./images/cards/webhook-scrap.svg" alt="webhook_scrap" width="49%">
-  <img src="./images/cards/search-linkedin.svg" alt="Search_linkedIn" width="49%">
-  <img src="./images/cards/instagram-odoo-msn.svg" alt="instagram_odoo_msn" width="49%">
-  <img src="./images/cards/servientrega-script.svg" alt="Servientrega_script" width="49%">
-</p>
+<div align="center">
 
-### 🧰 Web, apps y herramientas
+<sub>*No se trata solo de escribir código, sino de crear soluciones que realmente funcionen.*</sub>
 
-<p align="center">
-  <a href="https://github.com/TenebrisOne/Scrpt_whatsapp"><img src="./images/cards/scrpt-whatsapp.svg" alt="Scrpt_whatsapp" width="49%"></a>
-  <a href="https://github.com/TenebrisOne/asadero-bar-mamonas"><img src="./images/cards/asadero-bar-mamonas.svg" alt="asadero-bar-mamonas" width="49%"></a>
-  <a href="https://github.com/TenebrisOne/NextQR"><img src="./images/cards/nextqr.svg" alt="NextQR" width="49%"></a>
-  <a href="https://github.com/TenebrisOne/ConversorImg_py"><img src="./images/cards/conversorimg-py.svg" alt="ConversorImg_py" width="49%"></a>
-</p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:0a0c10&height=70&section=footer" alt="footer"/>
 
-> 🟢 **PÚBLICO** = repositorio abierto (la tarjeta enlaza al código) · 🟡 **PRIVADO** = proyecto para clientes reales, código bajo acuerdo de confidencialidad
-
-<img src="./images/divider.svg" width="100%" alt="">
-
-<img src="./images/sections/actividad.svg" width="100%" alt="Mi actividad en GitHub">
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TenebrisOne&show_icons=true&theme=tokyonight&locale=es&hide_border=true" alt="Estadísticas de GitHub" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TenebrisOne&layout=compact&theme=tokyonight&locale=es&hide_border=true" alt="Lenguajes más usados" height="165">
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=TenebrisOne&theme=tokyonight&hide_border=true&locale=es" alt="Racha de contribuciones" height="170">
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TenebrisOne&theme=tokyo-night&hide_border=true&area=true&locale=es" alt="Gráfico de actividad" width="95%">
-</p>
-
-<p align="center">
-  <a href="https://github.com/TenebrisOne"><img src="https://github-profile-trophy.vercel.app/?username=TenebrisOne&theme=tokyonight&no-frame=true&column=7&margin-w=8&margin-h=8" alt="Trofeos de GitHub"></a>
-</p>
-
-<img src="./images/sections/culebrita.svg" width="100%" alt="La culebrita se come mis commits">
-
-<p align="center">
-  <img src="./images/snake.svg" alt="Serpiente animada devorando mis contribuciones de GitHub" width="100%">
-</p>
-
-<img src="./images/divider.svg" width="100%" alt="">
-
-<img src="./images/sections/logros.svg" width="100%" alt="Logros Destacados">
-
-- ✔️ Reduje los tiempos de soporte técnico en un 30% mediante automatización y buenas prácticas.
-- ✔️ Desarrollé sistemas funcionales adoptados por negocios reales.
-- ✔️ Administro la infraestructura completa de mis despliegues: VPS, Apache/Nginx, SSL y dominios.
-- ✔️ Apliqué principios de ciberseguridad en cada proyecto.
-- ✔️ Reconocido por desempeño y cumplimiento de objetivos técnicos y de calidad.
-- ✔️ Becas por alto rendimiento académico.
-
-<br>
-
-<img src="./images/sections/contacto.svg" width="100%" alt="¿Hablamos?">
-
-Estoy abierto a nuevas oportunidades, colaboraciones o simplemente conectar.
-
-📧 **Correo:** habacucdeveloper@gmail.com
-🌐 **Portafolio:** [cristianruiz-dev.web.app](https://cristianruiz-dev.web.app/)
-📱 **WhatsApp:** [Envíame un mensaje](https://wa.me/573205426621?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20en%20GitHub%20y%20me%20gustar%C3%ADa%20hablar%20contigo%20sobre%20una%20oportunidad)
-📍 **Ubicación:** Colombia 🇨🇴
-
-<br>
-
-> *"No se trata solo de escribir código, sino de crear soluciones que realmente funcionen."*
-
-<img src="./images/footer.svg" width="100%" alt="⭐ ¿Te gustó algún proyecto? ¡Dale una estrella! Hecho con amor en Colombia — TenebrisOne">
+</div>
