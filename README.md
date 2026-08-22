@@ -129,16 +129,13 @@ const cristian = {
 
 <div align="center">
 
-<!--
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=TenebrisOne&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0c10&title_color=ffb000&icon_color=ffb000&text_color=c9d1d9&ring_color=ffb000" alt="stats"/>
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TenebrisOne&layout=compact&langs_count=8&hide_border=true&bg_color=0a0c10&title_color=ffb000&text_color=c9d1d9" alt="top-langs"/>
+<img height="170em" src="https://nice-readme.vercel.app/stats?username=TenebrisOne&theme=default&hide_border=true&show_icons=true&include_all_commits=true" alt="stats"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=TenebrisOne&hide_border=true&background=0a0c10&ring=ffb000&fire=ffb000&currStreakLabel=ffb000&sideLabels=c9d1d9&dates=8b949e&stroke=21262d&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="streak"/>
+<img src="https://nice-readme.vercel.app/streak-stats?user=TenebrisOne&theme=default&hide_border=true" alt="streak"/>
 
 <br/><br/>
--->
 
 <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
 
