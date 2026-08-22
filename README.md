@@ -138,10 +138,6 @@ const cristian = {
 
 <br/><br/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=TenebrisOne&hide_border=true&bg_color=0a0c10&color=ffb000&line=ffb000&point=ffffff&title_color=ffb000&area=true&area_color=ffb000" alt="activity-graph"/>
-
-<br/>
-
 <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
 
 </div>
